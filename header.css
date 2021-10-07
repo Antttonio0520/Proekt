@@ -1,0 +1,433 @@
+.container{
+  margin: 0 105px;
+}
+
+.title{
+  font-family: "Montserrat";
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 80px;
+}
+
+/* ----- PROMO ----- */
+
+.promo{
+  background: url(../proekt/promo-background.png) center center/cover no-repeat;
+  min-height: 800px;
+  padding-top: 35px;
+}
+
+.header{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav_list{
+  display: flex;
+  list-style-type: none;
+}
+
+.nav{
+  margin-bottom: 85px; /* добавил сам*/
+}
+
+.nav_item a{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px; /* было 18 */
+  color: black;
+  text-decoration: none;
+  padding: 11px 15px;
+  transition: all .3s ease;
+}
+
+.nav_item a:hover{
+  color: white;
+  background-color: #d03958;
+  border-radius: 5px;
+}
+
+.promo_content{
+  display: flex;
+  margin-top: 30px; /* было 170*/
+  justify-content: space-between;
+}
+
+.promo_text{
+  width: 50%;
+}
+
+.promo_title{
+  font-size: 90px;
+  font-family: "Montserrat";
+  color: rgb(208, 57, 88);
+  font-weight: bold;
+  line-height: 80px;
+}
+
+.promo_title span{
+  color: black;
+}
+
+.promo_descr{
+  font-size: 20px;
+  font-family: "PT Serif";
+  color: rgb(22, 22, 22);
+  line-height: 1.4;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  padding: 30px 25px;
+  background-color: rgb(208, 57, 88);
+  border-radius: 5px;
+   /*смещение формы
+   position: relative;
+   bottom: -70px;*/ /*не нужно */
+}
+
+.form_title{
+  font-size: 22px;
+  font-family: "Montserrat";
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+  margin-bottom: 37px;
+  text-align: center;
+}
+
+.form_input{
+  /*width: 100%;   ???  */
+  padding: 19px 23px 23px 19px;
+  font-family: "PT Serif";
+  font-size: 20px;
+  color: black; /* стоял серый - нах?*/
+  margin-bottom: 16px;
+  border: none;
+  border-radius: 5px;
+}
+
+.form_input:nth-child(5){
+  margin-bottom: 27px;
+}
+
+.form_input:focus{
+  outline: none;
+  border: none;
+}
+
+.form_checkbox{
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+.form_checkbox+label{
+  display: inline-flex;
+  align-items: center;
+  font-size: 20px;
+  font-family: "PT Serif";
+  color: rgb(255, 255, 255);
+  line-height: 1.25;
+  margin-bottom: 20px;
+}
+
+.form_checkbox+label::before{
+  content: '';
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background-color: white;
+  border-radius: 5px;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-right: 23px;
+}
+
+.form_checkbox:checked+label::before{
+  background-image: url("D:/projects/proekt/galka.svg");
+}
+
+.form_btn{
+  padding: 20px 140px;
+  background-color: black;
+  font-size: 22px;
+  font-family: "Montserrat";
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+  border: none;
+  border-radius: 5px;
+  transition: all .3s ease;
+}
+
+.form_btn:hover{
+  box-shadow: 5px 5px 0 0;
+}
+
+/*  ----- OUR SERVICES -----  */
+
+/*.our-services{
+  padding: 20px 0;
+}*/ /* не нужно */
+
+.our-services_title{
+  color: #d03958;
+}
+
+.our-services_title span{
+  color: black;
+}
+
+.our-services_item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.our-services_content{
+  display: flex;
+  justify-content: space-between;
+  /*margin-top: 100px;*/
+}
+
+.our-services_descr{
+  font-size: 20px;
+  font-family: "PT Serif";
+  color: rgb(22, 22, 22);
+  line-height: 1.4;
+  text-align: center;
+}
+
+.our-services_img{
+  margin-bottom: 40px; /* было 45 */
+}
+
+/* ------ OUR STORY ----- */
+
+
+.our-story{
+  background-color: #d03958;
+  padding: 30px 0;
+}
+
+.our-story_content{
+  display: flex;
+  justify-content: space-between;
+}
+
+.our-story_descr{
+  font-size: 20px;
+  font-family: "PT Serif";
+  color: rgb(255, 255, 255);
+  line-height: 1.4;
+}
+
+.our-story_button{
+  text-decoration: none;
+  font-size: 23px;
+  font-family: "Montserrat";
+  color: rgb(22, 22, 22);
+  padding: 24px 70px;
+  background-color: #e3d5b8;
+  border-radius: 5px;
+  margin: 10px 20px 10px 20px; /* добавил сам */
+  font-weight: 900; /* добавил сам */
+  transition: all .4s ease;
+}
+
+.our-story_button:hover{
+  background-color: black;
+  color: #fff;
+}
+
+
+
+/* ------ PRICING -------*/
+
+.pricing{
+  background-color: #e3d5b8;
+  padding-top: 30px; /* было 60*/
+}
+
+.pricing_title{
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.pricing_content{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.pricing_item{
+  background-color: white;
+  /*width: calc(33.333% - 20px)
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 35px;*/  /* ебала */
+  border-radius: 5px;
+  padding: 20px 50px 20px 50px;
+  position: relative;
+}
+
+.pricing_item .pricing_cost{
+  font-size: 60px;
+  font-family: "Montserrat";
+  color: rgb(208, 57, 88);
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.pricing_item p{
+  font-size: 22px;
+  font-family: "PT Serif";
+  color: rgb(22, 22, 22);
+  line-height: 1.273;
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.pricing_btn{
+  font-size: 22px;
+  font-family: "Montserrat";
+  color: rgb(22, 22, 22);
+  /* text-align: center; */ /* нах? */
+  text-decoration: none;
+  padding: 15px 70px; /* было 15 и 60 */
+  background-color: #e3d5b8;
+  border-radius: 5px;
+  transition: all .4s ease;
+  font-weight: 900; /* добавил сам */
+}
+
+.pricing_btn:hover{
+  background-color: #d03958;
+  color: #fff;
+}
+
+/*.pricing_descr{
+  margin-bottom: 40px;
+}   */
+
+.triangle{
+  width: 0;
+  height: 0;
+  border-top: 90px solid #b4a993;
+  border-right: 90px solid transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.triangle p{
+  font-size: 13px;
+  color: rgb(31, 31, 31);
+  line-height: 2.3;
+  position: absolute;
+  top: -75px;
+  left: 10px; /* было 5*/
+  margin: 0;
+  transform: skew(41deg, -41deg); /* добавил сам */
+}
+
+
+/* ----- REVIEWS ----- */
+
+.reviews{
+  padding-top: 70px; /* было 140 */
+  padding-bottom: 70px; /* было 120 */
+}
+
+.reviews .container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.testimonial{
+  width: 50%; /* было 60 */
+}
+
+.testimonial_title{
+  text-align: center;
+}
+
+.testimonial_content{
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonial_item{
+  position: relative;
+  padding: 26px 70px 26px 26px;
+  width: 75%;
+  margin-bottom: 35px;
+  transition: all .4s linear;
+  border-radius: 5px;
+}
+
+.testimonial_item:hover{
+  background-color: #e3d5b8;
+}
+
+.testimonial_img{
+  position: absolute;
+  right: -60px;
+  top: 6%;
+}
+
+.testimonial_descr{
+  font-size: 20px;
+  font-family: "PT Serif";
+  color: rgb(22, 22, 22);
+  line-height: 1.4;
+}
+
+.testimonial_subtext{
+  font-size: 20px;
+  font-family: "Montserrat";
+  color: rgb(208, 57, 88);
+  line-height: 1.4;
+}
+
+.gallery{
+  width: 40%; /* было 42 */
+}
+
+.gallery_title{
+  text-align: center;
+  color: #d03958;
+}
+
+.gallery_content{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* добавил сам */
+}
+
+.more{
+  font-size: 20px;
+  font-family: "Montserrat";
+  color: rgb(208, 57, 88);
+  line-height: 1.4;
+  display: block;
+  text-align: center;
+  margin-top: 20px; /* добавил сам */
+}
+
+.more:hover{
+  color: rgb(208, 57, 88);  /* не нужно */
+}
+
+/* ----- FOOTER ----- */
+
+.footer{
+  background-color: black;
+  min-height: 180px;
+}
+
+
+h1{margin-bottom: 40px} /* добавил сам*/
+html,body{margin:0;padding:0;} /* добавил сам*/
