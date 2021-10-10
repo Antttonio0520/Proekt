@@ -281,7 +281,7 @@
   margin-bottom: 30px;
 }
 
-.pricing_item p{
+.pricing_item {
   font-size: 22px;
   font-family: "PT Serif";
   color: rgb(22, 22, 22);
@@ -311,9 +311,10 @@
   color: #fff;
 }
 
-/*.pricing_descr{
-  margin-bottom: 40px;
-}   */
+.pricing_descr{
+  list-style-type: none;
+  padding: 0;
+}
 
 .triangle{
   width: 0;
