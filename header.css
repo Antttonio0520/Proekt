@@ -296,11 +296,14 @@
   color: rgb(22, 22, 22);
   /* text-align: center; */ /* нах? */
   text-decoration: none;
-  padding: 15px 70px; /* было 15 и 60 */
+  padding: 15px 0; /* было 15 и 60 */
   background-color: #e3d5b8;
   border-radius: 5px;
   transition: all .4s ease;
   font-weight: 900; /* добавил сам */
+  border: unset;
+  cursor: pointer;
+  width: 235px;
 }
 
 .pricing_btn:hover{
