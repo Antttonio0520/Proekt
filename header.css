@@ -12,7 +12,7 @@
 /* ----- PROMO ----- */
 
 .promo{
-  background: url(../proekt/promo-background.png) center center/cover no-repeat;
+  background: url(promo-background.png) center center/cover no-repeat;
   min-height: 800px;
   padding-top: 35px;
 }
@@ -145,7 +145,7 @@
 }
 
 .form_checkbox:checked+label::before{
-  background-image: url("D:/projects/proekt/galka.svg");
+  background-image: url("galka.svg");
 }
 
 .form_btn{
@@ -281,7 +281,7 @@
   margin-bottom: 30px;
 }
 
-.pricing_item p{
+.pricing_item {
   font-size: 22px;
   font-family: "PT Serif";
   color: rgb(22, 22, 22);
@@ -296,11 +296,14 @@
   color: rgb(22, 22, 22);
   /* text-align: center; */ /* нах? */
   text-decoration: none;
-  padding: 15px 70px; /* было 15 и 60 */
+  padding: 15px 0; /* было 15 и 60 */
   background-color: #e3d5b8;
   border-radius: 5px;
   transition: all .4s ease;
   font-weight: 900; /* добавил сам */
+  border: unset;
+  cursor: pointer;
+  width: 235px;
 }
 
 .pricing_btn:hover{
@@ -308,9 +311,10 @@
   color: #fff;
 }
 
-/*.pricing_descr{
-  margin-bottom: 40px;
-}   */
+.pricing_descr{
+  list-style-type: none;
+  padding: 0;
+}
 
 .triangle{
   width: 0;
